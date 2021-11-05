@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberRegist.html</title>
+    <style>
+        *{
+            font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .tblTitle{background-color:silver; font-weight: bold; padding: 10px;}
+        .tblContent{background-color:white; padding:10px;}
+        input[type=text]{border: 1px solid #AFAFAF;}
+        input[type=button]{border: 1px solid gray;}
+        .btn1{background-color: black; color:white;}
+    </style>
+</head>
+<body>
+    
+    <table border="0" width=670 style="background-color: gray;border-spacing: 1px; ">
+        <caption style="text-align:right; color: silver; font-size: 8px;">*필수입력</caption>
+        <tr>
+            <td class="tblTitle">
+                <span style='color: red;'>*</span>아이디</td>
+            <td style="background-color:white; color: gray; font-size: 8px;">  
+                    <input type="text" name="user_id">
+                    <input type="button"  value ="중복확인" class="btn1">
+                 +4~15자, 첫 영문자, 영문자와 숫자 조합
+                </td>
+        </tr>
+        <tr>
+            <td style="background-color:silver;"><strong>&nbsp;*비밀번호</strong></td>
+            <td style="background-color:white;">   
+                <form>
+                    <input type="text" name="name">
+                </form></td>
+        </tr>
+        <tr>
+            <td style="background-color:silver;"><strong>&nbsp;*비밀번호 확인</strong></td>
+            <td style="background-color:white; color: gray; font-size: 8px;">   
+                <form action="./form/request_form.html" method="post">
+                    <input type="text" name="user_id">&nbsp;(확인을 위해 다시 입력해 주세요.)
+                </form></td>
+        </tr>
+        <tr>
+            <td class="tblTitle">
+                <span style='color: red;'>*</span>이름</strong></td>
+            <td style="background-color:white;">   
+                <form action="./form/request_form.html" method="post">
+                    <input type="text" name="user_id">
+                </form></td>
+        </tr>
+        <tr>
+            <td class="tblTitle">생년월일</td>
+            <td style="background-color:white; color: gray; font-size: 8px;">   
+                <form style="color: black; font-size: 15px;" name="form3">
+                    <input  type="radio" name="gender"
+                    value="M" checked>남자
+                    &nbsp;
+                    <input type="radio" name="gender"
+                    value="W">여자
+                    <input type="text" name="jumin1" size="2">년
+                    <input type="text" name="jumin1" size="1">월
+                    <input type="text" name="jumin1" size="1">일
+                    &nbsp;&nbsp;(예, 2000년 01월 31일)
+                </form></td>
+        </tr>
+        
+        <tr>
+            <td rowspan="2" style="background-color:silver;"><strong>&nbsp;*이메일</strong></td>
+            <td style="background-color:white;">   
+                <form>
+                    <input type="text" name="jumin1" size="2"> @
+                    <input type="text" name="jumin1" value="gmail.com" size="5">
+                    <form action="">
+                        <!-- select>option*5 -->
+                        <select name="grade">
+                            <option value="ele">gmail.com</option>
+                            <option value="mid">중학교</option>
+                            <option value="high">고등학교</option>
+                            <option value="uni">대학교</option>
+                            <option value="uni2">대학원</option>
+                        </select>
+                        <input type="radio" name="gender"
+                        value="M" checked>수신허용 
+                        <input type="radio" name="gender"
+                        value="W">수신불가
+                    </form>
+                    
+                </form></td>
+            </tr>
+
+            <tr>
+                <td style="background-color:white; color: gray; font-size: 8px;"> 
+                    ※hanmail.net은 메일 수신이 어려울 수 있으니 가급적 다른 메일을 이용하시기 바랍니다.
+        </tr>
+        <tr>
+            <td class="tblTitle" rowspan="3">
+                <span style='color: red;'>*</span>주소
+            </td>
+            <td style="background-color:white; color: gray; font-size: 8px;">
+                <form>
+                    <input type="button"  value ="우편번호" class="btn1">
+                    <input type="text" size="5">(우편번호)
+                </form>
+            </td>
+        </tr>
+        <tr>
+            
+            <td bgcolor="white">  <form>
+                <input style="width: 95%" type="text" name="name">
+            </form></td>
+        </tr>
+        <tr>
+            <td style="background-color:white; color: gray; font-size: 8px;"><form>
+                <input style="width: 85%" type="text" name="name"> +나머지 주소
+            </form></td>
+        <tr>
+            <td style="background-color:silver;"><strong>&nbsp;&nbsp;전화번호</strong></td>
+            <td style="background-color:white;">   
+                <form >
+                    <input type="text" name="jumin1" size="2" maxlength="2">-
+                    <input type="text" name="jumin1" size="3" maxlength="3">-
+                    <input type="text" name="jumin1" size="3" maxlength="3">
+                </form></td>
+        </tr>
+        <tr>
+            <td style="background-color:silver;"><strong>&nbsp;*휴대전화</strong></td>
+            <td style="background-color:white;">   
+                <form >
+                    <input type="text" name="jumin1" size="2" maxlength="2">-
+                    <input type="text" name="jumin1" size="3" maxlength="3">-
+                    <input type="text" name="jumin1" size="3" maxlength="3">
+                    <input type="radio" name="gender"
+                        value="M" checked>SMS 수신허용 
+                        <input type="radio" name="gender"
+                        value="W">SMS 수신불가
+                </form></td>
+        </tr>
+        <tr>
+            <td style="background-color:silver;"><strong>&nbsp;*관심분야</strong></td>
+            <td style="background-color:white;">   
+                <form action="">
+                    <!-- select>option*5 -->
+                    <select name="grade">
+                        <option value="ele">&nbsp;&nbsp;&nbsp;::관심분야 선택::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="mid">중학교</option>
+                        <option value="high">고등학교</option>
+                        <option value="uni">대학교</option>
+                        <option value="uni2">대학원</option>
+                    </select>
+                </form></td>
+        </tr>
+        <tr>
+            <td style="background-color:silver;"><strong>&nbsp;*가입경로</strong></td>
+            <td style="background-color:white;"> 
+                <form action="">
+                    <!-- select>option*5 -->
+                    <select name="grade">
+                        <option value="ele">&nbsp;&nbsp;&nbsp;::가입경로 선택::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="mid">중학교</option>
+                        <option value="high">고등학교</option>
+                        <option value="uni">대학교</option>
+                        <option value="uni2">대학원</option>
+                    </select>
+                </form></td>
+        </tr>
+    </table>
+    <form style="text-align: center;" action="">
+    <input style="background-color:red; color:white;" text-align: center; type="submit" value="등록하기"> 
+    <input style="background-color:black; color:white;" text-align: center; type="submit" value="새로 쓰기">
+    </form></body>
+</html>

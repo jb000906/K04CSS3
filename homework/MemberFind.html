@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{border: 1px solid #AFAFAF;}
+        input[type=radio]{font-size: 200px; font-weight: bold;}
+        #sizeB{
+        width:200px;
+        height:15px;
+        margin: 5px;
+        align-content: right;
+        font-weight: bold;
+    }
+       
+
+    </style>
+</head>
+<body>
+    <span style="border: gray 3px;">
+    <table style="text-align: center; border: 3px gray; color: gray; border-spacing: 1px;">
+        <tr><td style="font-size: 5px;">
+        <input style="font-weight: bold; font-size: 5px;" type="radio" name="gender" value="M" >아이디 찾기 
+    <input style="font-weight: bold; font-size: 5px;" type="radio" name="gender"value="W" checked>비밀번호 찾기
+</td>
+<td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 13px; "><span style='color: red; font-weight: bold;'>></span>아이디</td>
+            <td><input type="text" name="user_id" id="sizeB"></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 13px;"><span style='color: red; font-weight: bold;'>></span>이름(대표자명)</td>
+            <td><input type="text" name="user_id" id="sizeB"></td>
+        </tr>
+        <tr>
+            <td><span style='color: red; font-weight: bold;'>></span>
+                <select name="grade">
+                <option value="ele">이메일</option>
+                <option value="mid">중학교</option>
+                <option value="high">고등학교</option>
+                <option value="uni">대학교</option>
+                <option value="uni2">대학원</option>
+            </select></td>
+            <td>
+                <input type="text" name="jumin1" size="3" maxlength="3">@
+                <input type="text" name="jumin1" size="3" maxlength="3">
+                <select name="grade">
+                    <option value="ele">직접입력</option>
+                    <option value="mid">중학교</option>
+                    <option value="high">고등학교</option>
+                    <option value="uni">대학교</option>
+                    <option value="uni2">대학원</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">......................................................................................
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size: 5px; color: gray;"> 아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요.
+            </td>
+        </tr>
+    </table>
+    </span>
+<br><br><br><br><br>
+
+
+
+
+
+
+    <table style="text-align: center; border: 3px gray; color: gray; ">
+        <tr><td style="font-size: 5px;"> 
+        <input style="font-weight: bold; font-size: 5px;" type="radio" name="login"value="W" checked>아이디 찾기
+        <input style="font-weight: bold; font-size: 5px;" type="radio" name="login" value="M" >비밀번호 찾기
+    </td>
+    <td>&nbsp;</td>
+        <tr>
+            <td style="font-weight: bold; font-size: 13px;"><span style='color: red; font-weight: bold;'>></span>이름(대표자명)</td>
+            <td><input type="text" name="user_id"></td>
+        </tr>
+        <tr>
+            <td><span style='color: red; font-weight: bold;'>></span>
+                <select name="grade">
+                <option value="ele">휴대전화</option>
+                <option value="mid">중학교</option>
+                <option value="high">고등학교</option>
+                <option value="uni">대학교</option>
+                <option value="uni2">대학원</option>
+            </select></td>
+            <td><input type="text" name="jumin1" size="2" maxlength="2">-
+                <input type="text" name="jumin1" size="3" maxlength="3">-
+                <input type="text" name="jumin1" size="3" maxlength="3">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">......................................................................................
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size: 5px; color: gray;"> 아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
